@@ -91,42 +91,46 @@
         `
     }
     function pickWinner() {
+        document.getElementById("name").innerHTML = '';
         let randomIndex = Math.floor(Math.random() * people.length); 
         let winner = people[randomIndex].name;
-        // setTimeout(()=>{
+        setTimeout(()=>{
             document.getElementById("name").innerHTML = winner; 
-        // },1000)
+        },1000)
         
     }
     function pickWinnertwos() {
+        document.getElementById("name").innerHTML = '';
         let randomIndex = Math.floor(Math.random() * people.length); 
         let randomIndex1 = Math.floor(Math.random() * people.length); 
         let winner = people[randomIndex].name; 
         let winner1 = people[randomIndex1].name; 
         console.log(winner,winner1);
         if (winner!=winner1) {
-            // setTimeout(()=>{
+            setTimeout(()=>{
                 document.getElementById("name").innerHTML = winner + '                         '+  winner1;
-            // },1000)
+            },1000)
             
         }
     }
 
     let manlist=people.filter((item)=>item.gender=='男')
     function pickWinnerman() {
+        document.getElementById("name").innerHTML = '';
         let randomIndex = Math.floor(Math.random() * manlist.length); 
         let winner = manlist[randomIndex].name;
-        // setTimeout(()=>{
+        setTimeout(()=>{
             document.getElementById("name").innerHTML = winner; 
-        // },1000) 
+        },1000) 
     }
     let womanlist=people.filter((item)=>item.gender=='女')
     function pickWinnerwoman() {
+        document.getElementById("name").innerHTML = '';
         let randomIndex = Math.floor(Math.random() * womanlist.length); 
         let winner = womanlist[randomIndex].name;
-        // setTimeout(()=>{
+        setTimeout(()=>{
             document.getElementById("name").innerHTML = winner; 
-        // },1000)
+        },1000)
     }
 
 </script>
@@ -202,15 +206,15 @@
 
     }
 
-    .ul {
+    .ul,#name {
         /* 偶数个 */
         /*background-image: linear-gradient(to right, red, yellow, purple, purple, yellow, red, yellow, purple, purple, yellow, red); */
         /* 奇数个 */
-        background-image: linear-gradient(to right, red, orange, yellow, green, blue, green, yellow, orange, red, orange, yellow, green, blue, green, yellow, orange, red);
+        background-image: linear-gradient(to right top , red, orange, yellow, green, blue, green, yellow, orange, red, orange, yellow, green, blue, green, yellow, orange, red);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         -webkit-background-size: 200% 100%;
-        animation: bgp 5s infinite linear;
+        animation: bgp 2s infinite linear;
     }
 
     @-webkit-keyframes bgp {
@@ -223,7 +227,7 @@
         }
     }
 
-    .ul li {
+    .ul li,.con #name {
         margin-right: 5px;
         text-decoration: none;
         padding: 3px 0;
