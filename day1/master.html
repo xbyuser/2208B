@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <span>
         master
@@ -13,14 +15,62 @@
 </body>
 
 <script>
-    const map=new Map([
-        ['name','上三'],
-        ['title','我的密码']
+//Map
+    const map = new Map([
+        ['name', '上三'],
+        ['title', '我的密码']
     ]);
-   
-console.log( map.size);
-console.log(map);
 
-console.log(map.get('name'));
+
+    map.set('six', '男')
+    // map.clear()
+    map.delete('six')
+    console.log(map.get('name'));
+    console.log(map);
+    console.log(map.size);
+//Set
+    const sss = new Set(['二西', '野荷', '巨龙', '咆哮', '永恒'])
+
+    sss.add('迈阿密')
+    sss.delete('迈阿密')
+    console.log(sss.size);
+    console.log(sss);
+    for (const v of sss) {
+        console.log(v);
+    }
+//class
+    class paint {
+        constructor(a, b) {
+            this.a = a;
+            this.b = b;
+        }
+        toString() {
+            return '(' + this.a + ',' + this.b + ")";
+        }
+    }
+    let p = new paint(1, 2)
+    console.log(p.toString());
+    console.log(p);
+
+
+
+
+    class Iphon {
+        constructor(brand,price){
+            this.brand = brand;
+            this.price = price;
+        }
+        call(){
+                console.log('可以打电话');
+        }
+    }
+    let phion=new Iphon('Mac','12000')
+    console.log(phion);
+    phion.call()
+
+    let arr=[1,2,3,[1,2,3,[4,5,6]],[1,[8,9,7],2,3]];
+    let abb=arr.flat(2)
+    console.log(abb);
 </script>
+
 </html>
