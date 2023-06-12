@@ -1,0 +1,8 @@
+<!--pages/type/type.wxml-->
+
+<view class="page">
+		<view class="item" style="background-color:rgb({{item.a}}, {{item.b}}, {{item.c}}) ;" wx:for="{{arr}}" wx:key="index">
+		{{item.a}}  {{item.b}}  {{item.c}}
+		</view>
+		
+</view>

@@ -1,0 +1,12 @@
+<!--pages/dateil/dateil.wxml-->
+<text>pages/dateil/dateil.wxml</text>
+<navigator open-type="navigateBack" delta="1">back</navigator>
+{{con}}
+<button bindtap="add">
+		++
+</button>
+
+<view>
+	
+	<map bind:abc='dwads'>插槽</map>
+</view>

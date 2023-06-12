@@ -1,0 +1,20 @@
+<!--componment/map/map.wxml-->
+<text>componment/map/map.wxml</text>
+<map longitude="{{longitude}}" latitude="{{latitude}}"></map>
+<!-- {{con}}
+<button bindtap="add">
+		++
+</button> -->
+
+<view>
+	{{n1 }}+ {{n2 }}={{sum}}
+</view>
+<button bindtap="n1jia"> n1++</button>
+<button  >n2++</button>
+
+<view class="sscs" style="background: linear-gradient(to right, rgb({{a}},{{b}},{{c}}), rgb(80, 150, 220))">
+	
+</view>
+<slot></slot>
+<button bindtap="anycolor">切换颜色</button>
+

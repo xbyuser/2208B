@@ -1,0 +1,37 @@
+建立初始化本地仓库  git init
+
+本地缓存 git add .
+
+本地存储 git commit -m '描述信息'
+
+定位与远程仓库连接  git remote add origin 远程仓库地址 
+
+推送到远程仓库  git push origin master
+
+查看当前状态   git status
+
+查看版本号 git log  简洁版号 git log --oneline
+
+回退 git reset --hard Head~0 上一级
+    git reset --hard Head~1 上上级 
+    git reset --hard 精确版本号  
+    git reflog  可以查看每次切换的记录 ，查看所有
+
+创建分支 git branch 分支名
+
+查看分支 git branch 
+
+切换分支 git checkout 分支名
+
+删除分支 git branch -d 分支名
+
+合并分支 git merge 分支名     git rebase  分支名
+
+git stash clear  清空暂存栈/列表
+
+
+撤销合并分支 git reset --hard 版本号
+
+创建公钥  ssh-keygen -t rsa -C '邮箱'  
+获取公钥  cat ~/链接
+验证公钥  ssh -T git@gitee.com

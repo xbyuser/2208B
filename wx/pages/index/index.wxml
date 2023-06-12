@@ -1,0 +1,23 @@
+<input bindinput="inp" class="inp" placeholder="输入"></input>
+<view class="number">
+	数字:            {{inputValue}}
+</view>
+
+<view class="string">
+	字符:              {{string}}
+</view>
+<view wx:if="{{type==1}}">
+张三		男
+</view>
+<view wx:elif="{{type==2}}">
+李四		女
+</view>
+<view wx:else>
+		保密
+</view>
+<button bindtap="avbc" data-sex='{{2}}'>切换性别</button>
+
+
+<view hidden="{{false}}" class="heoll">
+		你好
+</view>

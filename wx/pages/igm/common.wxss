@@ -1,0 +1,10 @@
+.heoll{
+	background-color: pink;
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 50%;
+	margin: auto;
+	line-height: 80rpx;
+	text-align: center;
+	color: #fff;
+}

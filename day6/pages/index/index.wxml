@@ -1,0 +1,29 @@
+<view class="top">
+	<text class="top1">品牌特卖 100%正品</text>
+	<text class="top2">品牌授权 38元免邮 返还无忧</text>
+	<input class="inp" type="text" />
+</view>
+
+<swiper autoplay class="banner" indicator-dots>
+	<swiper-item wx:for="{{banner}}" wx:key="good_id">
+		<image class="img" src="{{item.image_src}}" mode="" />
+	</swiper-item>
+</swiper>
+
+<view class="list">
+	<view class="item" wx:for="{{list}}" wx:key="name">
+		<image class="listimg" src="{{item.image_src}}" mode="" />
+	</view>
+</view>
+
+<view class="con" >
+	<navigator url="/pages/cart/cart" open-type="switchTab" class="scs1">商家推荐</navigator>
+	<navigator url="/pages/my/my" open-type="switchTab" class="scs2"></navigator>
+</view>
+
+<navigator url="/pagesA/pages/dateil/dateil" open-type="navigate">Godateil</navigator>
+
+
+<view bindtap="Gotype">
+	GOtype
+</view>

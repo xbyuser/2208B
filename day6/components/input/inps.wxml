@@ -1,0 +1,3 @@
+<!--components/input/inps.wxml-->
+<text>components/input/inps.wxml</text>
+<input type="text"/>

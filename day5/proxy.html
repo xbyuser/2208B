@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj =new Proxy(
+            {},
+            {
+                get: function(target,key,receiver ) {
+                    console.log(`getting ${key}`);
+                    return Reflect.get(target, key, receiver);
+                },
+                set: function(target, key,value, receiver) {
+                        console.log(target);
+                        console.log(key);
+                        console.log(value);
+                        console.log(receiver);
+                        return Reflect.set(target, key,value, receiver);
+                 }
+            }
+        );
+
+        obj.conut=1
+        ++obj.conut
+    </script>
+</body>
+</html>

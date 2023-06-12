@@ -1,0 +1,18 @@
+@import '../igm/common.wxss';
+.inp{
+	background-color:pink;
+	border: 1rpx  solid #ccc;
+	border-radius: 4rpx;
+	margin: 0 20rpx;
+}
+.number{
+	background-color: brown;
+	color: #Fff;
+	margin: 10px 0;
+}
+.string{
+	background-color: brown;
+	color: #Fff;
+}
+
+

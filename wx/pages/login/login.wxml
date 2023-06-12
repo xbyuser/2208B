@@ -1,0 +1,20 @@
+<view class="home">
+	<image class="img" src="https://wap.lexuemiao.com/img/logo@2x.a4702f31.png" mode=""/>
+	<view class="form"> 
+			<view class="inp">
+					<image class="inpimg" src="../igm/下载1.png" mode=""/>
+					<input class="ipt" bindinput="mobile" type="text" placeholder="请输入手机号"/>
+			</view>
+			<view class="inp">
+				<image class="inpimg" src="../igm/微信图片_20230604191557.png" mode=""/>
+				<input class="ipt" bindinput="user_pass" type="password" placeholder="请输入密码"/>
+			</view>
+			<view class="inp">
+				<image class="inpimg" src="../igm/微信图片_20230604191557.png" mode=""/>
+				<input class="ipt" bindinput="captcha" type="text" placeholder="请输入验证码"/>
+			</view>
+	</view>
+	<view>
+		<button class="login" bindtap="login">登录</button>
+	</view>
+</view>
